@@ -1,0 +1,7 @@
+# Stage 1 — minimal (fast install, enough for health check + tests)
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+pydantic-settings>=2.0.0
+sqlalchemy>=2.0.0
+httpx>=0.28.0
+pytest>=8.0.0

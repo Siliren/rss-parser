@@ -1,0 +1,23 @@
+# Full stack — install after requirements-core.txt
+# Tip: run in Git Bash with venv active; spaCy model is Stage 5 (NLP)
+
+-r requirements-core.txt
+
+httpx>=0.28.0
+beautifulsoup4>=4.12.0
+lxml>=5.0.0          # XML/RSS parser backend for BeautifulSoup (Stage 3)
+alembic>=1.14.0
+
+# Analyze-any-URL feature: main-article extraction from raw HTML
+trafilatura>=2.1.0
+lxml_html_clean>=0.4.0   # required by trafilatura/justext with lxml 5+
+
+# Dashboard & visualization (Stage 10 — can install later)
+streamlit>=1.40.0
+matplotlib>=3.9.0
+wordcloud>=1.9.0
+pandas>=2.2.0
+
+# NLP (Stage 5 — heavy; install when starting preprocessing)
+# pip install spacy>=3.8.9
+# python -m spacy download uk_core_news_sm
